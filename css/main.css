@@ -1,0 +1,43 @@
+h1 {
+    color: rgb(255, 0, 0);
+    text-align: center;
+  }
+
+.centrar-todo {
+  padding-left: 450px;
+}
+
+.num {
+  width: 40px;
+  height: 30px;
+}
+
+.total {
+  text-align: center;
+}
+
+.boton {
+  width: 80px;
+  height: 30px;
+}
+
+.box {
+        background-color: blanchedalmond;
+        width: 400px; 
+        height: 500px; 
+        border: 2px solid;
+        -webkit-border-radius: 16px 17px 16px 16px;
+        -moz-border-radius: 16px 17px 16px 16px;
+        border-radius: 16px 16px 16px 16px;
+  }
+
+.font {
+    font-family: Arial;
+}
+
+.texto {
+  border-radius: 5px;
+  box-align: 5px;
+  padding: 5px;
+  align-items: center;
+}

@@ -1,0 +1,49 @@
+<!-- 
+        don't except something WOW
+-->
+<!DOCTYPE html>
+<html lang="en" class="font">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue js</title>
+    <div class="centrar-todo">
+</head>
+<body>
+
+
+    <div id="app" class="box">
+
+        <h1>{{titulo}}</h1>
+
+        <center>
+        <input type="text" v-model="nuevoItem" class="texto" @keyup.enter="agregarItem">
+        <button class="boton" @click="agregarItem">Agregar</button>
+        </center>
+
+        <ul>
+            <li v-for="item of tienda"><input type="number" class="num" v-model.number="item.cantidad">
+                {{item.nombre}}
+                <button @click="item.cantidad++">+</button>
+                <button @click="item.cantidad--">-</button>
+                <span v-if="item.cantidad === 0"> - Sin Stock</span>
+                <span v-if="item.cantidad >= 100"> - Quedan Varios</span>
+                <span v-if="item.cantidad <= -1"> - En Deuda</span>
+            </li>
+        </ul>
+            <center>
+            <h2>
+                Total = {{sumarItems}}
+            </h2>
+            </center>
+    </div>
+
+
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="/vue_list/css/main.css">
+    <script src="/vue_list/vue/vue.js"></script>
+</body>
+</div>
+</html>
